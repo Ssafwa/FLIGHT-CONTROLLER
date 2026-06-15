@@ -2,9 +2,15 @@
 
 # STM32 Flight Controller
 
-A custom flight controller PCB built around an STM32 microcontroller, designed for small to mid-sized multirotor and fixed-wing builds. The board integrates IMU sensing, motor/ESC outputs, RC input, USB connectivity, and status indicators on a compact 2-layer design.
+A custom flight controller PCB built around an STM32 microcontroller, designed for small to mid-sized multirotor and fixed-wing builds. The board integrates IMU sensing, motor/ESC outputs, RC input, USB connectivity, and status indicators.
 
-![Top View](Docs/Images/top-view.png)
+.<img width="643" height="515" alt="Screenshot from 2026-06-14 21-12-36" src="https://github.com/user-attachments/assets/d93a26da-49b0-4cde-b586-11f4898e24dc" />
+
+## Softwares
+
+![EasyEDA](https://img.shields.io/badge/EasyEDA-1765AC?style=for-the-badge&logo=easyeda&logoColor=white)
+![Brave](https://img.shields.io/badge/Brave-FB542B?style=for-the-badge&logo=brave&logoColor=white)
+
 
 ## Overview
 
@@ -19,56 +25,14 @@ The board is designed in EasyEDA and is fully open for anyone who wants to build
 - Multiple connector headers for peripherals (UART, sensors, motor outputs, etc.)
 - USB connectivity for programming/debugging
 - Test points broken out for debugging
-- 2-layer PCB with bottom-layer ground plane
-- Mounting holes for standard frame compatibility
+- Mounting holes for standard frame compatibiliy
 
-## Repository Structure
+Designed in **EasyEDA **.
 
-```
-.
-├── Hardware/
-│   ├── PCB/              # PCB layout files (EasyEDA)
-│   ├── Schematic/        # Schematic files (EasyEDA)
-│   ├── Gerbers/          # Manufacturing files (Gerber/drill)
-│   ├── 3D-Renders/       # Board renders (top/bottom/iso views)
-│   └── Datasheets/       # Component datasheets used in design
-├── BOM/
-│   └── bom.csv           # Bill of materials
-├── Docs/
-│   └── Images/           # Photos, screenshots, build images
-└── README.md
-```
+ <img width="1137" height="795" alt="image" src="https://github.com/user-attachments/assets/0064976a-6f5f-4b6f-98c1-09125874babf" />
+this the stm32 main schematics everything is connected with net labels
 
-## Design Tool
+<img width="1137" height="795" alt="image" src="https://github.com/user-attachments/assets/43050cce-95e8-40d1-95c9-ea9ef9887317" />
+and these are the main sensor used in this flight controller 
 
-Designed in **EasyEDA / EasyEDA Pro**. Source design files are included under `Hardware/PCB` and `Hardware/Schematic` so the project can be opened, edited, or forked directly.
-
-## Manufacturing
-
-Gerber files for fabrication are located in `Hardware/Gerbers`. These can be uploaded directly to most PCB fab houses (JLCPCB, PCBWay, etc.) for production.
-
-Recommended fab specs:
-- 2 layers
-- 1oz copper
-- Minimum trace/space: 0.2mm / 0.2mm
-- Minimum via drill: 0.3mm
-
-## Bill of Materials
-
-A full BOM is provided in `BOM/bom.csv`, listing all components, values, footprints, and reference designators used on the board.
-
-## Status
-
-Routing complete, DRC clean (0 errors). Bottom layer routed with dedicated ground plane pour. Board has been generated and is ready for fabrication/assembly.
-
-## Renders & Images
-
-See `Hardware/3D-Renders` for top/bottom isometric views, and `Docs/Images` for additional build photos and progress shots.
-
-## Notes
-
-This is a personal/hobby project shared for reference and learning purposes. Feel free to open issues if you spot something that could be improved in the design.
-
-## License
-
-All rights reserved. This design is shared for reference purposes only. Please do not redistribute or sell without permission.
+OTHER FILES AND SCHEMATICS ARE ADDED TO repo root directory view 
